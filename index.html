@@ -98,13 +98,19 @@
     .panel{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg, rgba(8,16,28,.86), rgba(4,8,14,.94));box-shadow:var(--shadow);overflow:hidden}
     .panel-body{padding:22px}
 
-    .founders-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}
-    .founders-image{border:1px solid rgba(67,231,255,.18);border-radius:22px;overflow:hidden;background:#06101c}
-    .founders-image img{width:100%;height:100%;object-fit:cover}
-    .founders-copy{border:1px solid rgba(67,231,255,.14);border-radius:22px;padding:22px;background:rgba(67,231,255,.04)}
-    .founders-copy h3{margin:0 0 10px;font-size:clamp(26px,3vw,40px);line-height:1.02;text-transform:uppercase;letter-spacing:-.03em}
-    .founders-copy p{margin:0;color:#d7e5f6;line-height:1.68;font-size:16px}
-    .mini-stats{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
+    .contact-grid{display:grid;grid-template-columns:1fr .95fr;gap:18px;align-items:stretch}
+    .contact-copy,.contact-card{border:1px solid rgba(67,231,255,.14);border-radius:22px;padding:22px;background:rgba(67,231,255,.04)}
+    .contact-copy h3{margin:0 0 10px;font-size:clamp(26px,3vw,40px);line-height:1.02;text-transform:uppercase;letter-spacing:-.03em}
+    .contact-copy p{margin:0;color:#d7e5f6;line-height:1.68;font-size:16px}
+    .contact-card{border-color:rgba(241,179,41,.22);background:radial-gradient(circle at top right, rgba(241,179,41,.10), transparent 34%), rgba(67,231,255,.04)}
+    .contact-card h3{margin:0 0 10px;font-size:clamp(24px,2.6vw,34px);line-height:1.05;text-transform:uppercase;letter-spacing:-.03em}
+    .contact-card p{margin:0 0 18px;color:#dce9f8;line-height:1.6;font-size:16px}
+    .contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .contact-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 14px;border-radius:14px;border:1px solid rgba(67,231,255,.28);background:rgba(67,231,255,.06);font-weight:850;font-size:14px;color:var(--text)}
+    .contact-link:hover{border-color:rgba(67,231,255,.76);background:rgba(67,231,255,.10)}
+    .contact-link.gold{border-color:rgba(241,179,41,.32);background:rgba(241,179,41,.12);color:var(--gold-2)}
+    .contact-note{margin-top:14px;color:var(--muted);font-size:13px;line-height:1.55}
+    .mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
     .mini-stat{border:1px solid rgba(67,231,255,.14);border-radius:16px;padding:14px;background:rgba(67,231,255,.04)}
     .mini-stat strong{display:block;color:var(--cyan);font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
     .mini-stat span{color:#dce9f8;line-height:1.55;font-size:15px}
@@ -146,10 +152,11 @@
     @media (max-width: 980px){
       .hero-intro{padding:26px 20px}
       .section-head{align-items:start;flex-direction:column}
-      .founders-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
       .book-card{grid-template-columns:1fr}
       .book-cover{max-width:260px}
       .steps{grid-template-columns:1fr 1fr}
+      .mini-stats{grid-template-columns:1fr}
     }
     @media (max-width: 640px){
       .wrap{width:min(100% - 20px, var(--max))}
@@ -185,7 +192,7 @@
       </a>
       <nav class="nav-links" aria-label="Page navigation">
         <a href="#library">Books</a>
-        <a href="#founders">Founders</a>
+        <a href="#contact">Contact</a>
         <a href="#system">System</a>
         <a href="https://ivandimitry.github.io/authority-asset/">Third Book</a>
       </nav>
@@ -208,30 +215,37 @@
         </div>
       </section>
 
-      <section id="founders" aria-labelledby="founders-title">
+      <section id="contact" aria-labelledby="contact-title">
         <div class="section-head">
-          <h2 id="founders-title">Founders</h2>
-          <p>The people behind the project. TrustPress AI is built as a publishing proof-of-concept around books, authority, and distribution systems.</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>Want to talk about a book, authority asset, LinkedIn-driven distribution, or a TrustPress AI-style publishing system?</p>
         </div>
         <div class="panel">
           <div class="panel-body">
-            <div class="founders-grid">
-              <div class="founders-image">
-                <img src="founders-ivan-natasa.jpg" alt="Ivan Dimitrijevic and Natasa Dimitrijevic" />
-              </div>
-              <div class="founders-copy">
-                <h3>Ivan Dimitrijevic & Natasa Dimitrijevic</h3>
-                <p>TrustPress AI is a practical publishing system for turning expert knowledge into books, authority assets, and commercially useful market memory. The project combines strategy, positioning, writing, publishing, and distribution into one visible operating system.</p>
+            <div class="contact-grid">
+              <div class="contact-copy">
+                <h3>Let’s turn expertise into something the market can remember.</h3>
+                <p>TrustPress AI is built around a simple idea: raw knowledge is not the asset. Organized trust is. Reach out if you want to discuss a book project, authority publishing, or how to turn your expertise into visible market memory.</p>
                 <div class="mini-stats">
                   <div class="mini-stat">
                     <strong>Ivan Dimitrijevic</strong>
-                    <span>Growth strategist, authority publisher, and lead author behind the TrustPress AI publishing projects.</span>
+                    <span>Growth strategy, authority publishing, LinkedIn distribution, and market-memory systems.</span>
                   </div>
                   <div class="mini-stat">
                     <strong>Natasa Dimitrijevic</strong>
-                    <span>Writer, journalist, and editorial partner helping shape the narrative, language, and long-form quality of the books and assets.</span>
+                    <span>Writing, editorial direction, narrative development, and long-form authority assets.</span>
                   </div>
                 </div>
+              </div>
+              <div class="contact-card">
+                <h3>Start the conversation</h3>
+                <p>Send an email or connect with us on LinkedIn.</p>
+                <div class="contact-actions">
+                  <a class="contact-link gold" href="mailto:toci1111@gmail.com subject=TrustPress%20AI%20inquiry">Email us</a>
+                  <a class="contact-link" href="https://rs.linkedin.com/in/ivandimitrijevic" target="_blank" rel="noopener">Ivan on LinkedIn</a>
+                  <a class="contact-link" href="https://www.linkedin.com/in/rokselana" target="_blank" rel="noopener">Natasa on LinkedIn</a>
+                </div>
+                <p class="contact-note">Before publishing, replace <strong>YOUR_EMAIL_HERE</strong> in the mail button with your preferred contact email.</p>
               </div>
             </div>
           </div>
