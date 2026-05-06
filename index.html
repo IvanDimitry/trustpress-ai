@@ -61,15 +61,31 @@
     .nav-links a:hover{border-color:rgba(67,231,255,.24);color:var(--text);background:rgba(67,231,255,.06)}
 
     .hero{padding:28px 0 32px;display:grid;grid-template-columns:1fr;gap:20px}
-    .hero-panel{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:36px;background:linear-gradient(180deg, rgba(9,18,32,.78), rgba(5,9,16,.90));box-shadow:var(--shadow)}
+    .hero-intro{
+      border:1px solid var(--line);
+      border-radius:36px;
+      padding:34px 28px;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(19,164,255,.14), transparent 34%),
+        linear-gradient(180deg, rgba(9,18,32,.86), rgba(5,9,16,.94));
+      box-shadow:var(--shadow);
+    }
+    .hero-panel{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:36px;
+      background:linear-gradient(180deg, rgba(9,18,32,.78), rgba(5,9,16,.90));
+      box-shadow:var(--shadow);
+    }
     .hero-panel img{width:100%;height:auto;display:block}
-    .hero-copy{position:absolute;left:0;top:0;bottom:0;width:min(48%, 560px);padding:42px 34px;background:linear-gradient(90deg, rgba(3,7,13,.76) 0%, rgba(3,7,13,.34) 65%, transparent 100%);display:flex;flex-direction:column;justify-content:center}
     .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold-2);text-transform:uppercase;font-size:12px;font-weight:900;letter-spacing:.22em;margin-bottom:16px}
     .eyebrow::before,.eyebrow::after{content:"";width:38px;height:1px;background:linear-gradient(90deg, transparent, var(--gold))}
     .eyebrow::after{background:linear-gradient(90deg, var(--gold), transparent)}
-    h1{margin:0;font-size:clamp(36px, 5vw, 66px);line-height:.96;letter-spacing:-.045em;text-transform:uppercase}
-    .hero-copy p{margin:16px 0 0;color:#d9e6f6;font-size:clamp(18px, 2vw, 22px);line-height:1.5;max-width:420px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    h1{margin:0 auto;font-size:clamp(36px, 5vw, 66px);line-height:.96;letter-spacing:-.045em;text-transform:uppercase;max-width:920px}
+    .hero-intro p{margin:16px auto 0;color:#d9e6f6;font-size:clamp(18px, 2vw, 22px);line-height:1.5;max-width:760px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;justify-content:center}
     .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 16px;border-radius:999px;font-weight:850;border:1px solid rgba(67,231,255,.28);background:rgba(9,22,38,.74);transition:.18s ease}
     .btn:hover{transform:translateY(-2px);border-color:rgba(67,231,255,.74);background:rgba(13,34,56,.88)}
     .btn.primary{background:linear-gradient(135deg, rgba(19,164,255,.92), rgba(67,231,255,.72));color:#02131a;border-color:rgba(67,231,255,.84);box-shadow:0 18px 50px rgba(19,164,255,.26)}
@@ -128,8 +144,7 @@
     .note{margin-top:8px;color:var(--muted);font-size:13px;line-height:1.55}
 
     @media (max-width: 980px){
-      .hero-copy{position:static;width:auto;background:none;padding:24px}
-      .hero-panel{display:grid}
+      .hero-intro{padding:26px 20px}
       .section-head{align-items:start;flex-direction:column}
       .founders-grid{grid-template-columns:1fr}
       .book-card{grid-template-columns:1fr}
@@ -178,19 +193,19 @@
 
     <main>
       <section class="hero">
-        <div class="hero-panel">
-          <img src="hero-trustpress-ai.jpg" alt="TrustPress AI hero banner with Ivan and Natasa" />
-          <div class="hero-copy">
-            <div class="eyebrow">AI-assisted authority publishing</div>
-            <h1>Books that build trust, authority, and market memory</h1>
-            <p>TrustPress AI is an AI publishing, authority, and distribution system built to turn raw knowledge into structured assets people can trust, remember, and share.</p>
-            <div class="hero-actions">
-              <a class="btn primary" href="#library">Explore the 3 books</a>
-              <a class="btn gold" href="https://ivandimitry.github.io/authority-asset/">Open The Authority Asset</a>
-            </div>
+        <div class="hero-intro">
+          <div class="eyebrow">AI-assisted authority publishing</div>
+          <h1>Books that build trust, authority, and market memory</h1>
+          <p>TrustPress AI is an AI publishing, authority, and distribution system built to turn raw knowledge into structured assets people can trust, remember, and share.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#library">Explore the 3 books</a>
+            <a class="btn gold" href="https://ivandimitry.github.io/authority-asset/">Open The Authority Asset</a>
           </div>
         </div>
-        <p class="note">Easy publish setup: upload the <strong>assets</strong> folder into <strong>/trustpress-ai/</strong>, replace the old <strong>index.html</strong>, commit, and refresh the page.</p>
+
+        <div class="hero-panel">
+          <img src="hero-trustpress-ai.jpg" alt="TrustPress AI hero banner with Ivan and Natasa" />
+        </div>
       </section>
 
       <section id="founders" aria-labelledby="founders-title">
