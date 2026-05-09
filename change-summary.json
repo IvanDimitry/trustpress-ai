@@ -1,0 +1,22 @@
+{
+  "target_url": "https://ivandimitry.github.io/trustpress-ai/",
+  "target_repo": "IvanDimitry/trustpress-ai",
+  "files_to_replace": [
+    "index.html"
+  ],
+  "files_to_upload": [
+    "cover-build-trust-not-vanity.jpg"
+  ],
+  "files_to_keep": [
+    "hero-trustpress-ai.jpg",
+    "cover-trust-shortlist-pipeline.jpg",
+    "cover-my-way.jpg",
+    "cover-authority-asset.jpg",
+    "social-preview.jpg"
+  ],
+  "new_book": {
+    "title": "Build Trust, Not Vanity",
+    "url": "https://ivandimitry.github.io/build-trust-not-vanity/",
+    "cover": "cover-build-trust-not-vanity.jpg"
+  }
+}
