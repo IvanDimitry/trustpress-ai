@@ -1,0 +1,438 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrustPress AI Services — Audit, Sprint, Build, Retainer</title>
+  <meta name="description" content="TrustPress AI services for authority assets and trust-led GTM: Authority Asset Audit, Trust-Led Agentic GTM Audit, sprints, builds, and monthly retainers." />
+  <link rel="canonical" href="https://ivandimitry.github.io/trustpress-ai/services/" />
+  <meta property="og:title" content="TrustPress AI Services" />
+  <meta property="og:description" content="Two service tracks: Authority Asset System and Trust-Led GTM System. Diagnose first. Build second. Operate monthly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ivandimitry.github.io/trustpress-ai/services/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg:#04070d;
+      --bg-2:#07121e;
+      --panel:rgba(9,18,32,.84);
+      --panel-2:rgba(5,10,18,.94);
+      --line:rgba(48,220,255,.18);
+      --line-strong:rgba(67,231,255,.34);
+      --text:#eef5ff;
+      --muted:#9db0c8;
+      --blue:#13a4ff;
+      --cyan:#43e7ff;
+      --gold:#f1b329;
+      --gold-2:#ffd772;
+      --green:#66f2a5;
+      --radius:28px;
+      --shadow:0 24px 90px rgba(0,156,255,.13);
+      --max:1220px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(19,164,255,.18), transparent 28%),
+        radial-gradient(circle at 88% 5%, rgba(241,179,41,.10), transparent 25%),
+        radial-gradient(circle at 50% 52%, rgba(67,231,255,.06), transparent 34%),
+        linear-gradient(180deg,#03060a 0%,#07111d 44%,#03060a 100%);
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";position:fixed;inset:0;pointer-events:none;opacity:.38;
+      background-image:
+        linear-gradient(rgba(67,231,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(67,231,255,.04) 1px, transparent 1px);
+      background-size:44px 44px;
+      mask-image:radial-gradient(circle at center, black, transparent 76%);
+    }
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(var(--max), calc(100% - 32px));margin:0 auto;position:relative;z-index:1}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;position:sticky;top:0;z-index:20;background:linear-gradient(180deg, rgba(3,6,10,.96), rgba(3,6,10,.68));backdrop-filter:blur(16px)}
+    .brand{display:inline-flex;align-items:center;gap:12px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:14px}
+    .brand-mark{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;color:var(--cyan);border:1px solid rgba(67,231,255,.42);background:linear-gradient(135deg,rgba(19,164,255,.18),rgba(241,179,41,.10));box-shadow:0 0 24px rgba(19,164,255,.18)}
+    .nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .nav-links a{color:var(--muted);padding:9px 12px;border-radius:999px;font-size:14px;border:1px solid transparent}
+    .nav-links a:hover{border-color:rgba(67,231,255,.24);color:var(--text);background:rgba(67,231,255,.06)}
+    .hero{padding:48px 0 34px}
+    .hero-box{
+      border:1px solid var(--line);
+      border-radius:38px;
+      padding:46px 30px;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(19,164,255,.17), transparent 38%),
+        radial-gradient(circle at 50% 110%, rgba(241,179,41,.10), transparent 32%),
+        linear-gradient(180deg, rgba(9,18,32,.9), rgba(5,9,16,.96));
+      box-shadow:var(--shadow);
+      overflow:hidden;position:relative;
+    }
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold-2);text-transform:uppercase;font-size:12px;font-weight:900;letter-spacing:.22em;margin-bottom:16px}
+    .eyebrow::before,.eyebrow::after{content:"";width:38px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+    .eyebrow::after{background:linear-gradient(90deg,var(--gold),transparent)}
+    h1{margin:0 auto;font-size:clamp(42px,6vw,84px);line-height:.92;letter-spacing:-.06em;text-transform:uppercase;max-width:1020px}
+    h2{margin:0;font-size:clamp(32px,5vw,62px);line-height:.94;letter-spacing:-.045em;text-transform:uppercase}
+    h3{margin:0 0 10px;font-size:clamp(24px,3vw,36px);line-height:1.02;text-transform:uppercase;letter-spacing:-.035em}
+    p{color:var(--muted);line-height:1.65}
+    .lead{margin:18px auto 0;color:#d9e6f6;font-size:clamp(18px,2vw,23px);line-height:1.5;max-width:850px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;justify-content:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 17px;border-radius:999px;font-weight:850;border:1px solid rgba(67,231,255,.28);background:rgba(9,22,38,.74);transition:.18s ease}
+    .btn:hover{transform:translateY(-2px);border-color:rgba(67,231,255,.74);background:rgba(13,34,56,.88)}
+    .btn.primary{background:linear-gradient(135deg,rgba(19,164,255,.96),rgba(67,231,255,.76));color:#02131a;border-color:rgba(67,231,255,.84);box-shadow:0 18px 50px rgba(19,164,255,.26)}
+    .btn.gold{background:linear-gradient(135deg,rgba(241,179,41,.96),rgba(255,215,114,.80));color:#1b1200;border-color:rgba(255,215,114,.76);box-shadow:0 18px 50px rgba(241,179,41,.18)}
+    section{padding:34px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}
+    .section-head p{margin:0;max-width:580px}
+    .panel{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,rgba(8,16,28,.86),rgba(4,8,14,.94));box-shadow:var(--shadow);overflow:hidden}
+    .panel-body{padding:24px}
+    .two-track{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .track-card{border:1px solid rgba(67,231,255,.16);border-radius:28px;padding:24px;background:rgba(67,231,255,.04);position:relative;overflow:hidden}
+    .track-card.gold{border-color:rgba(241,179,41,.24);background:radial-gradient(circle at top right,rgba(241,179,41,.11),transparent 34%),rgba(67,231,255,.04)}
+    .track-card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--gold));opacity:.75}
+    .track-card p{font-size:16px;margin:0 0 16px;color:#d7e5f6}
+    .tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+    .tag{border:1px solid rgba(67,231,255,.18);background:rgba(67,231,255,.06);color:#dce9f8;border-radius:999px;padding:8px 10px;font-size:13px;font-weight:800}
+    .service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .service-grid.five{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .service{border:1px solid rgba(67,231,255,.18);border-radius:22px;padding:20px;background:linear-gradient(180deg,rgba(67,231,255,.06),rgba(67,231,255,.025));min-height:285px;display:flex;flex-direction:column}
+    .service.gold{border-color:rgba(241,179,41,.22);background:linear-gradient(180deg,rgba(241,179,41,.09),rgba(67,231,255,.025))}
+    .service strong{display:block;color:var(--gold-2);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:10px}
+    .service h3{font-size:22px}
+    .service p{margin:0;color:#cfe0f3;font-size:15px;line-height:1.55}
+    .service ul{margin:12px 0 0;padding-left:18px;color:#cfe0f3;font-size:14px;line-height:1.5}
+    .service li{margin:6px 0}
+    .mini-cta{margin-top:auto;padding-top:14px;color:var(--cyan);font-weight:900;font-size:14px}
+    .decision{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .decision-card{border:1px solid rgba(67,231,255,.14);border-radius:22px;padding:22px;background:rgba(67,231,255,.04)}
+    .decision-card h3{font-size:28px}
+    .decision-card p{font-size:16px;color:#d7e5f6}
+
+    .investment-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}
+    .investment-card{border:1px solid rgba(241,179,41,.24);border-radius:28px;padding:24px;background:radial-gradient(circle at top right,rgba(241,179,41,.10),transparent 34%),rgba(67,231,255,.04)}
+    .investment-card h3{font-size:30px}
+    .investment-list{display:grid;gap:10px;margin:18px 0 0}
+    .investment-row{display:flex;justify-content:space-between;gap:14px;border:1px solid rgba(67,231,255,.14);border-radius:16px;padding:13px 14px;background:rgba(67,231,255,.04)}
+    .investment-row strong{color:#dce9f8}
+    .investment-row span{color:var(--gold-2);font-weight:900;text-align:right}
+    .pilot-note{border:1px solid rgba(67,231,255,.16);border-radius:22px;padding:22px;background:rgba(67,231,255,.04)}
+    .pilot-note p{font-size:16px;color:#d7e5f6;margin:0 0 12px}
+    .compare-table{width:100%;border-collapse:separate;border-spacing:0 10px}
+    .compare-table th{text-align:left;color:var(--gold-2);font-size:12px;text-transform:uppercase;letter-spacing:.1em;padding:0 12px 4px}
+    .compare-table td{background:rgba(67,231,255,.04);border-top:1px solid rgba(67,231,255,.14);border-bottom:1px solid rgba(67,231,255,.14);padding:14px 12px;color:#dce9f8;vertical-align:top}
+    .compare-table td:first-child{border-left:1px solid rgba(67,231,255,.14);border-radius:16px 0 0 16px;color:var(--cyan);font-weight:850}
+    .compare-table td:last-child{border-right:1px solid rgba(67,231,255,.14);border-radius:0 16px 16px 0;color:var(--muted)}
+    .cta{padding-bottom:70px}
+    .cta-box{border:1px solid rgba(241,179,41,.24);border-radius:34px;padding:32px;text-align:center;background:radial-gradient(circle at top center,rgba(241,179,41,.12),transparent 30%),rgba(8,16,28,.85);box-shadow:0 28px 100px rgba(241,179,41,.10)}
+    .cta-box p{max-width:840px;margin:16px auto 0;color:#d8e5f6;font-size:18px}
+    footer{border-top:1px solid rgba(67,231,255,.14);color:rgba(237,244,255,.62);padding:22px 0 34px;font-size:14px}
+    .footer-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    @media (max-width:1100px){
+      .service-grid,.service-grid.five{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:860px){
+      .section-head{align-items:start;flex-direction:column}
+      .two-track,.decision,.investment-grid{grid-template-columns:1fr}
+      .hero-box{padding:34px 20px}
+    }
+    @media (max-width:640px){
+      .wrap{width:min(100% - 20px,var(--max))}
+      .nav{position:relative;flex-direction:column;align-items:flex-start}
+      .nav-links{justify-content:flex-start}
+      .btn{width:100%}
+      .service-grid,.service-grid.five{grid-template-columns:1fr}
+      .panel-body,.track-card,.service,.cta-box{padding:20px}
+      .compare-table{font-size:14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav" aria-label="Site header">
+      <a class="brand" href="../" aria-label="TrustPress AI home">
+        <span class="brand-mark">TP</span>
+        <span>TrustPress AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#tracks">Tracks</a>
+        <a href="#authority">Authority</a>
+        <a href="#gtm">GTM</a>
+        <a href="#choose">Choose</a>
+        <a href="#investment">Investment</a>
+        <a href="#start">Start</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-box">
+          <div class="eyebrow">Services</div>
+          <h1>Diagnose first. Build second. Operate monthly.</h1>
+          <p class="lead">TrustPress AI has two service tracks: one for turning expertise into authority assets, and one for building trust-led GTM systems before AI, automation, or outbound scale the wrong thing.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#authority">Authority Asset Track</a>
+            <a class="btn gold" href="#gtm">Trust-Led GTM Track</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="tracks">
+        <div class="section-head">
+          <h2>Two ways to work with TrustPress AI</h2>
+          <p>Both tracks follow the same principle: diagnose the trust gap, build the foundation, create the asset or system, then keep the loop alive.</p>
+        </div>
+        <div class="two-track">
+          <article class="track-card gold">
+            <h3>Authority Asset System</h3>
+            <p>For experts, founders, consultants, and B2B teams who need books, reports, proof systems, LinkedIn authority assets, and market-memory infrastructure.</p>
+            <div class="tag-row">
+              <span class="tag">Authority Asset Audit</span>
+              <span class="tag">Authority Asset Sprint</span>
+              <span class="tag">Authority Asset Build</span>
+              <span class="tag">Authority Operations Retainer</span>
+            </div>
+          </article>
+          <article class="track-card">
+            <h3>Trust-Led GTM System</h3>
+            <p>For B2B teams exploring AI-assisted GTM, outbound, LinkedIn-led growth, agents, proof architecture, warm conversations, and trust-led scale.</p>
+            <div class="tag-row">
+              <span class="tag">Trust-Led GTM Audit</span>
+              <span class="tag">Foundation Sprint</span>
+              <span class="tag">Agentic GTM Architecture</span>
+              <span class="tag">Partner Build</span>
+              <span class="tag">Trust Orchestration Retainer</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="authority">
+        <div class="section-head">
+          <h2>Authority Asset Track</h2>
+          <p>For teams whose knowledge is strong but scattered. The goal is to turn expertise into something buyers can inspect, forward, cite, and trust.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service gold">
+            <strong>01 — Audit</strong>
+            <h3>Authority Asset Audit</h3>
+            <p>Diagnose whether your expertise is ready to become a serious authority asset.</p>
+            <ul>
+              <li>Thesis and positioning clarity</li>
+              <li>Offer and proof strength</li>
+              <li>Source material and archive depth</li>
+              <li>LinkedIn trust surface</li>
+              <li>Market-memory potential</li>
+            </ul>
+            <div class="mini-cta">Audit your authority foundation.</div>
+          </article>
+          <article class="service gold">
+            <strong>02 — Sprint</strong>
+            <h3>Authority Asset Sprint</h3>
+            <p>Fix the foundation and design the asset before building.</p>
+            <ul>
+              <li>Message house</li>
+              <li>Proof map</li>
+              <li>Asset architecture</li>
+              <li>Visual direction</li>
+              <li>Launch angle and CTA path</li>
+            </ul>
+            <div class="mini-cta">Make the asset build-ready.</div>
+          </article>
+          <article class="service gold">
+            <strong>03 — Build</strong>
+            <h3>Authority Asset Build</h3>
+            <p>Create the serious asset that carries expertise into market memory.</p>
+            <ul>
+              <li>Book or strategic report</li>
+              <li>Executive guide</li>
+              <li>Proof page or diagnostic toolkit</li>
+              <li>GitHub knowledge hub</li>
+              <li>Sales enablement asset</li>
+            </ul>
+            <div class="mini-cta">Build the asset buyers can inspect.</div>
+          </article>
+          <article class="service gold">
+            <strong>04 — Retainer</strong>
+            <h3>Authority Operations Retainer</h3>
+            <p>Keep the authority asset alive after launch.</p>
+            <ul>
+              <li>LinkedIn content direction</li>
+              <li>Newsletter/articles</li>
+              <li>Proof updates</li>
+              <li>Page and CTA improvements</li>
+              <li>Comment/DM signal capture</li>
+            </ul>
+            <div class="mini-cta">Operate the authority system monthly.</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gtm">
+        <div class="section-head">
+          <h2>Trust-Led GTM Track</h2>
+          <p>For teams asking what AI, automation, outbound, and agentic GTM would actually scale: credibility or confusion?</p>
+        </div>
+        <div class="service-grid five">
+          <article class="service">
+            <strong>01 — Audit</strong>
+            <h3>Trust-Led Agentic GTM Audit</h3>
+            <p>Diagnose what your current GTM would scale before adding more automation.</p>
+            <ul>
+              <li>Market signal</li>
+              <li>Buyer language</li>
+              <li>Proof architecture</li>
+              <li>Trust surfaces</li>
+              <li>Human oversight</li>
+            </ul>
+            <div class="mini-cta">Diagnose what your GTM would scale.</div>
+          </article>
+          <article class="service">
+            <strong>02 — Sprint</strong>
+            <h3>Trust-Led GTM Foundation Sprint</h3>
+            <p>Fix the trust layer before scaling motion.</p>
+            <ul>
+              <li>Buyer language bank</li>
+              <li>Proof map</li>
+              <li>Trust surface fixes</li>
+              <li>Authority asset recommendation</li>
+              <li>90-day roadmap</li>
+            </ul>
+            <div class="mini-cta">Fix the trust layer first.</div>
+          </article>
+          <article class="service">
+            <strong>03 — Architecture</strong>
+            <h3>Agentic GTM Architecture Sprint</h3>
+            <p>Design the system before building the machine.</p>
+            <ul>
+              <li>Agent roles</li>
+              <li>Workflow logic</li>
+              <li>Approval gates</li>
+              <li>Proof and claim rules</li>
+              <li>Implementation brief</li>
+            </ul>
+            <div class="mini-cta">Design before implementation.</div>
+          </article>
+          <article class="service">
+            <strong>04 — Partner Build</strong>
+            <h3>Agentic GTM Build</h3>
+            <p>Technical implementation with a real GTM builder or implementation partner.</p>
+            <ul>
+              <li>CRM and enrichment workflows</li>
+              <li>Agents and automations</li>
+              <li>Dashboards and integrations</li>
+              <li>Testing and QA</li>
+              <li>Operational handoff</li>
+            </ul>
+            <div class="mini-cta">Available with GTM builder.</div>
+          </article>
+          <article class="service">
+            <strong>05 — Retainer</strong>
+            <h3>Monthly Trust Orchestration Retainer</h3>
+            <p>Keep the trust-led GTM system learning and improving.</p>
+            <ul>
+              <li>Monthly signal review</li>
+              <li>Buyer language updates</li>
+              <li>Proof updates</li>
+              <li>Content and asset optimization</li>
+              <li>Learning-loop review</li>
+            </ul>
+            <div class="mini-cta">Operate the trust loop monthly.</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="choose">
+        <div class="section-head">
+          <h2>Which track is right?</h2>
+          <p>Most clients start with one audit. The right audit depends on whether the main problem is scattered expertise or scaling GTM motion.</p>
+        </div>
+        <div class="decision">
+          <article class="decision-card">
+            <h3>Start with the Authority Asset Audit if…</h3>
+            <p>Your expertise is strong, but the market cannot clearly see what you know, why it matters, what proof supports it, or what asset should carry it.</p>
+          </article>
+          <article class="decision-card">
+            <h3>Start with the Trust-Led GTM Audit if…</h3>
+            <p>Your team is using or exploring AI, automation, LinkedIn-led GTM, outbound, agents, or sales motion — and you need to know what that system would scale.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Service boundaries</h2>
+          <p>TrustPress AI should own strategy, trust architecture, proof, assets, message, and judgment. Technical GTM implementation should involve a real GTM builder.</p>
+        </div>
+        <div class="panel">
+          <div class="panel-body">
+            <table class="compare-table" aria-label="Service boundary table">
+              <thead>
+                <tr><th>Area</th><th>TrustPress AI owns</th><th>GTM builder owns</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Strategy</td><td>Trust architecture, offer clarity, buyer language, proof logic, asset strategy.</td><td>Technical feasibility and implementation sequencing.</td></tr>
+                <tr><td>Assets</td><td>Books, reports, proof pages, diagnostic tools, LinkedIn authority assets, public pages.</td><td>Asset integration into sales systems and CRM workflows.</td></tr>
+                <tr><td>Agents</td><td>Agent jobs, source discipline, human approval gates, proof and claim rules.</td><td>Agent configuration, workflow automation, data enrichment, integrations.</td></tr>
+                <tr><td>Operations</td><td>Signal review, content direction, proof updates, learning loop, trust surface improvements.</td><td>Dashboards, routing, CRM logic, QA of automated workflow execution.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="investment">
+        <div class="section-head">
+          <h2>Typical investment</h2>
+          <p>Pricing stays diagnostic-first. Public ranges qualify serious buyers without turning the page into a commodity menu.</p>
+        </div>
+        <div class="investment-grid">
+          <article class="investment-card">
+            <h3>Public starting points</h3>
+            <p>Most work starts with an audit. Sprints, builds, and retainers are scoped after diagnosis because the right asset depends on the trust gap, proof depth, implementation complexity, and commercial goal.</p>
+            <div class="investment-list">
+              <div class="investment-row"><strong>Authority Asset Audit</strong><span>from €1,500</span></div>
+              <div class="investment-row"><strong>Trust-Led Agentic GTM Audit</strong><span>from €2,500</span></div>
+              <div class="investment-row"><strong>Foundation Sprints</strong><span>from €5,000</span></div>
+              <div class="investment-row"><strong>Authority Asset Builds</strong><span>custom scoped</span></div>
+              <div class="investment-row"><strong>Monthly Retainers</strong><span>from €3,000/mo</span></div>
+            </div>
+          </article>
+          <article class="pilot-note">
+            <h3>Selected pilot pricing</h3>
+            <p>Selected pilot pricing may be available for the first few qualified clients in exchange for structured feedback, implementation learning, and permission to use a safe case note.</p>
+            <p>The goal is not cheap delivery. The goal is to validate the audit, sharpen the sprint, and build proof for the system.</p>
+            <div class="hero-actions" style="justify-content:flex-start;">
+              <a class="btn gold" href="mailto:toci1111@gmail.com?subject=Authority%20Asset%20Audit%20Inquiry">Ask about Authority Audit</a>
+              <a class="btn primary" href="mailto:toci1111@gmail.com?subject=Trust-Led%20Agentic%20GTM%20Audit%20Inquiry">Ask about GTM Audit</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <section id="start" class="cta">
+        <div class="cta-box">
+          <h2>Start with the audit.</h2>
+          <p>If your expertise is scattered, start with the Authority Asset Audit. If your GTM is about to scale with AI, automation, or outbound, start with the Trust-Led Agentic GTM Audit.</p>
+          <div class="hero-actions">
+            <a class="btn gold" href="mailto:toci1111@gmail.com?subject=Authority%20Asset%20Audit%20Inquiry">Authority Asset Audit</a>
+            <a class="btn primary" href="mailto:toci1111@gmail.com?subject=Trust-Led%20Agentic%20GTM%20Audit%20Inquiry">Trust-Led GTM Audit</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-row">
+        <span>© 2026 Ivan Dimitrijevic. TrustPress AI.</span>
+        <span>Diagnose first. Build second. Operate monthly.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
