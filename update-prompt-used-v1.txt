@@ -1,0 +1,175 @@
+You are helping me update my TrustPress AI GitHub Pages hub.
+
+Target URL:
+https://ivandimitry.github.io/trustpress-ai/
+
+Target repo/page:
+TrustPress AI GitHub Pages hub.
+Follow the current TrustPress AI GitHub Pages Publishing Protocol.
+
+Purpose of this update:
+Add two new book/proof-library cards to the existing TrustPress AI proof library section, without redesigning the whole page and without overloading the hub.
+
+Protocol rules to follow:
+- One page. One job. One clean repo decision.
+- This page is the TrustPress AI hub/library/system overview.
+- Do not turn it into a full landing page for every book.
+- Add book cover, title, subtitle, short description, status, link/CTA where appropriate.
+- Keep filenames clean, lowercase, no spaces, no parentheses.
+- Preserve existing style, layout, typography, dark premium B2B visual system, and responsive behavior.
+- Replace only what is needed.
+- Do not delete working images.
+- Keep existing cards and links working.
+- Use relative paths consistent with the existing page.
+- After update, check image loading, links, mobile layout, and no broken paths.
+- Rollback plan: use GitHub commit history and revert the latest commit if anything breaks.
+
+Current page context:
+The TrustPress AI page already has a proof library section with cards for:
+1. Trust, Shortlist, Pipeline
+2. MY WAY
+3. The Authority Asset
+4. Build Trust, Not Vanity
+
+Task:
+Add two new cards after Build Trust, Not Vanity.
+
+New card 1:
+Title:
+The Invisible Expert OS
+
+Subtitle:
+How B2B Founders Turn LinkedIn Into Pre-Sales Positioning Infrastructure
+
+Status label:
+Client proof asset 05
+
+Visual marker:
+★★★★★
+
+Important:
+The five stars are a visual/premium proof marker only. Do not write “5-star review” unless there is an approved public testimonial. Do not imply a public rating unless approved.
+
+Description:
+A premium TrustPress AI proof asset showing how strong offline expertise can become a clearer founder authority system online. Built around positioning, proof architecture, profile trust surface, founder authority, and pre-sales positioning infrastructure.
+
+CTA:
+No download link.
+This book is showcase-only for now.
+Use one of these non-download labels:
+- Private client asset
+- Showcase only
+- Case note coming soon
+- Preview only
+
+Recommended CTA text:
+Showcase only
+
+Image:
+Use the best available cover image for The Invisible Expert OS. If no standalone cover image exists, extract the first page/cover from the final Invisible Expert OS PDF and save it as:
+
+book-invisible-expert-os.jpg
+
+Alt text:
+The Invisible Expert OS book cover by Focus Solutions and Sheza Yazdani.
+
+New card 2:
+Title:
+Trust Orchestration
+
+Subtitle:
+How B2B Teams Build Agentic GTM Systems That Scale Signal, Proof, and Buyer Trust
+
+Status label:
+Flagship book 06
+
+Stars:
+No stars. This is Ivan’s own book, so do not use star rating.
+
+Description:
+A TrustPress AI flagship book on building agentic GTM systems that scale signal, proof, buyer trust, authority assets, warm conversations, and human judgment instead of confusion.
+
+CTA:
+Open book page
+
+Link:
+../trust-orchestration/
+
+Image:
+Use the final Trust Orchestration cover image and save it as:
+
+book-trust-orchestration.jpg
+
+Alt text:
+Trust Orchestration book cover by Ivan Dimitrijevic.
+
+Image handling:
+Existing TrustPress AI page appears to use book images inside the same TrustPress AI page folder. Keep the same pattern unless the existing HTML clearly uses an /assets/ folder.
+
+Recommended upload files:
+- index.html
+- book-invisible-expert-os.jpg
+- book-trust-orchestration.jpg
+
+If the existing page uses an assets folder, use:
+- assets/book-invisible-expert-os.jpg
+- assets/book-trust-orchestration.jpg
+
+But do not mix root image paths and assets image paths. Match the existing page.
+
+Card placement:
+Add both cards in the existing proof library grid after the Build Trust, Not Vanity card.
+
+Design:
+Match current book-card structure:
+- cover image at top
+- small status label
+- title
+- subtitle
+- short description
+- CTA row/button
+- premium dark card styling
+- consistent spacing and hover behavior
+- mobile responsive
+
+Do not create a new full section unless absolutely needed.
+Preferred heading remains:
+The TrustPress AI proof library
+
+Optional small intro line after adding the cards:
+These assets show different forms of TrustPress AI work: public books, proof-of-concept books, client authority assets, and flagship category-building systems.
+
+SEO / metadata:
+Do not change the whole SEO strategy.
+Optional: update page meta description slightly to mention authority assets, books, client proof assets, and TrustPress AI publishing system.
+If the page has structured data or item list schema, update it to include the two new books/proof assets.
+If no schema exists, do not overbuild unless asked.
+
+Link checks:
+- Existing book links must still work.
+- Trust Orchestration card must link to ../trust-orchestration/
+- Invisible Expert OS card must not link to a download.
+- No placeholder links.
+- No local paths.
+- No sandbox links.
+- No broken image paths.
+
+Final output needed:
+1. Updated index.html.
+2. List of image filenames to upload.
+3. Short changelog.
+4. Live URL QA checklist.
+
+QA checklist:
+- Page loads.
+- Existing cards still display.
+- New Invisible Expert OS card displays.
+- Stars display on Invisible Expert OS card only.
+- Invisible Expert OS has no download link.
+- New Trust Orchestration card displays.
+- Trust Orchestration card links to ../trust-orchestration/
+- All images load.
+- Mobile layout works.
+- No broken paths.
+- No old/incorrect filenames.
+- No accidental changes to root site.
